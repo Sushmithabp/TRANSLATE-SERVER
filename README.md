@@ -13,8 +13,8 @@
 >MySQL: Database for storing translations
 >External API: Google-Translate API (for actual translations)
 
->**APPROACH**
-This is a Web Server which can be used by an individual looking to translate text from one language to the desired language. The user is required to provide following three fields : -
+**APPROACH**
+>This is a Web Server which can be used by an individual looking to translate text from one language to the desired language. The user is required to provide following three fields : -
 ```
 - Source language code
 - Target language code
