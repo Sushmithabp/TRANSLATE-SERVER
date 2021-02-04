@@ -27,7 +27,7 @@ This is a Web Server which can be used by an individual looking to translate tex
     - Text to be translated
 
 ## How to setup and run the server
-- Clone the repository from github (https://github.com/rishitsahu/translate-server)
+- Clone the repository from github (https://github.com/Sushmithabp/TRANSLATE-SERVER)
 - Open it in a code editor (VScode preferred)
 - For the MySQL database connection you have to specify the port, host, user and the password in all the 4 modules which are db, route, smartCache, cacheMiddleware according to   your MySQL database.
 - Install all the dependencies present in package.json with following command
