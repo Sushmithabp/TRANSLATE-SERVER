@@ -26,7 +26,7 @@ Install all the dependencies present in package.json with following command -npm
 Define the port number in index.json (I have set it 1010 as of now)
 Run index.json with following command node index -Server is ready. Run the request in this format http://localhost:1010/translate?src_lang=hi&target_lang=en&text=Pardon
 Cache Database Schema
- |__translations
+ #|__translations
             |___ src_lang
             |___ target_lang
             |___ text
