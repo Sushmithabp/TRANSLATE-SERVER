@@ -21,12 +21,13 @@
 - Text to be translated
 ```
 **How to setup and run the server**
--Clone the repository from github (https://github.com/rishitsahu/translate-server)
--Open it in a code editor (VScode preferred)
--For the MySQL database connection you have to specify the port, host, user and the password in all the 4 modules which are db, route, smartCache, cacheMiddleware according to your MySQL database.
--Install all the dependencies present in package.json with following command -npm i dependency@lastest_version --save -npm install dotenv@google-cloud/translate --save (for the api, use this command)
--Define the port number in index.json (I have set it 1010 as of now)
--Run index.json with following command node index -Server is ready. Run the request in this format http://localhost:1010/translate?src_lang=hi&target_lang=en&text=Pardon
+
+>-Clone the repository from github (https://github.com/rishitsahu/translate-server)
+>-Open it in a code editor (VScode preferred)
+>-For the MySQL database connection you have to specify the port, host, user and the password in all the 4 modules which are db, route, smartCache, cacheMiddleware according to your MySQL database.
+>-Install all the dependencies present in package.json with following command -npm i dependency@lastest_version --save -npm install dotenv@google-cloud/translate --save (for the api, use this command)
+>-Define the port number in index.json (I have set it 1010 as of now)
+>-Run index.json with following command node index -Server is ready. Run the request in this format http://localhost:1010/translate?src_lang=hi&target_lang=en&text=Pardon
 
 **Cache Database Schema**
  ```
@@ -41,9 +42,10 @@
 
 **Design Decisions:**
 
->Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four fields it's best to store the data in the form of table
->For the smartcaching, it stores the translation of the given text in all the languages related to the target language because a user is also likely to translate the same text to the related languages
->The Router is designed in such a way that if the demanded text is already present in the database, then the server would not hit translate API and would return the translations directly from the database
+>-Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four fields it's best to store the data in the form of table
+>-For the smartcaching, it stores the translation of the given text in all the languages related to the target language because a user is also likely to translate the same text to the related languages
+>-The Router is designed in such a way that if the demanded text is already present in the database, then the server would not hit translate API and would return the translations directly from the database
+
 **Generating the API**
 >Use https://console.cloud.google.com/ for generating API KEY from your service account. Now, enable the cloud translate API (It will ask for the billing address but wouldn't charge for less than 50 request per day)
 >Note: As of now, credentials of the API will be sent through the mail so I have removed the credentials from the code I am uploading here. Please find it in the mail
