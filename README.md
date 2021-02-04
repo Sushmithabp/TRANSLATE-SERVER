@@ -8,7 +8,7 @@ git add
 git commit
 ```
 **Requirements**
-Node
+>Node
 MySQL
 VS Code
 Tech Stack
