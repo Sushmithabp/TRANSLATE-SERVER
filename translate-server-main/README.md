@@ -103,10 +103,10 @@ Translations for similar languages (Smart Caching)
 
 ## Author
 
-Name: Rishit Sahu
+Name: SUSHMITHA.B.POOJARY
 
-Email: rishitsahu17@gmail.com
+Email: sushmithab481@gmail.com
 
-Phone No.: +91 9588036568
+Phone No.: +91 9535233856/8217642862
 
-https://github.com/rishitsahu
+https://github.com/Sushmithabp/TRANSLATE-SERVER
