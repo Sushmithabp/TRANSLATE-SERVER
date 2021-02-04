@@ -1,7 +1,12 @@
 # CODE-YOUNG ASSIGNMENT
 Problem Statement
 Create a web server to translate a text from one language to another.
-**This text is _extremely_ important**
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
 Requirements
 Node
 MySQL
