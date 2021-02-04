@@ -7,7 +7,7 @@ git status
 git add
 git commit
 ```
-require "Requirements"
+**Requirements**
 Node
 MySQL
 VS Code
