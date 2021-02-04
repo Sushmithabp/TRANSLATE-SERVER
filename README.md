@@ -3,15 +3,15 @@
 >Create a web server to translate a text from one language to another.
 
 **REQUIREMENTS**
->Node
->MySQL
->VS Code
->Tech Stack
->Javascript: Primary programming language
->NodeJS: Javascript runtime environment
->ExpressJS: Backend Framework
->MySQL: Database for storing translations
->External API: Google-Translate API (for actual translations)
+* Node
+* MySQL
+* VS Code
+* Tech Stack
+* Javascript: Primary programming language
+* NodeJS: Javascript runtime environment
+* ExpressJS: Backend Framework
+* MySQL: Database for storing translations
+* External API: Google-Translate API (for actual translations)
 
 **APPROACH**
 >This is a Web Server which can be used by an individual looking to translate text from one language to the desired language. The user is required to provide following three fields : -
@@ -22,8 +22,8 @@
 ```
 **How to setup and run the server**
 
->-Clone the repository from github (https://github.com/rishitsahu/translate-server)
->-Open it in a code editor (VScode preferred)
+>- Clone the repository from github (https://github.com/rishitsahu/translate-server)
+>- Open it in a code editor (VScode preferred)
 >-For the MySQL database connection you have to specify the port, host, user and the password in all the 4 modules which are db, route, smartCache, cacheMiddleware according to your MySQL database.
 >-Install all the dependencies present in package.json with following command -npm i dependency@lastest_version --save -npm install dotenv@google-cloud/translate --save (for the api, use this command)
 >-Define the port number in index.json (I have set it 1010 as of now)
