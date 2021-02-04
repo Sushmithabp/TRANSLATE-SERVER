@@ -81,8 +81,10 @@ Instead of taking language code from the user we can just have the name of the s
 Instead of storing strings in the database we can do the operation on the words of the string, and we can store the individual words. Now for each input string, we would break down the string into words and store those words into database. After a reasonable number of translations, our database would be containing enough words to make meaningful sentences. We can make a separate machine learning model to train the dataset. This would account for a decreased API cost but a complex database.
 
 **NPM packages used**
+```
 - mysql
 - dotenv
 - body-parser
 - @google-cloud/translate
 - nodemon
+```
