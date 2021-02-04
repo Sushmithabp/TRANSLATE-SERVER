@@ -12,7 +12,8 @@ NodeJS: Javascript runtime environment
 ExpressJS: Backend Framework
 MySQL: Database for storing translations
 External API: Google-Translate API (for actual translations)
-Approach
+
+APPROACH
 This is a Web Server which can be used by an individual looking to translate text from one language to the desired language. The user is required to provide following three fields : -
 
 - Source language code
@@ -25,8 +26,10 @@ For the MySQL database connection you have to specify the port, host, user and t
 Install all the dependencies present in package.json with following command -npm i dependency@lastest_version --save -npm install dotenv@google-cloud/translate --save (for the api, use this command)
 Define the port number in index.json (I have set it 1010 as of now)
 Run index.json with following command node index -Server is ready. Run the request in this format http://localhost:1010/translate?src_lang=hi&target_lang=en&text=Pardon
+
 Cache Database Schema
- #|__translations
+ 
+ |__translations
             |___ src_lang
             |___ target_lang
             |___ text
@@ -34,7 +37,8 @@ Cache Database Schema
 
 
 
-Design Decisions
+Design Decisions:
+
 Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four fields it's best to store the data in the form of table
 For the smartcaching, it stores the translation of the given text in all the languages related to the target language because a user is also likely to translate the same text to the related languages
 The Router is designed in such a way that if the demanded text is already present in the database, then the server would not hit translate API and would return the translations directly from the database
@@ -42,7 +46,8 @@ Generating the API
 Use https://console.cloud.google.com/ for generating API KEY from your service account. Now, enable the cloud translate API (It will ask for the billing address but wouldn't charge for less than 50 request per day)
 Note: As of now, credentials of the API will be sent through the mail so I have removed the credentials from the code I am uploading here. Please find it in the mail
 
-How it works?
+
+###How it works?
 As and when index.js is run on the command prompt a connection is created with the database and a new database is created named translate_data, a table is created in the database named translations with four fields namely src_lang (source language), target_lang, text (input), translation (output) and the server with the specified port number starts.
 
 Now the user is required to provide the query in a browser in the above mentioned format.
