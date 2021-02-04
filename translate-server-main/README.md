@@ -49,7 +49,7 @@ This is a Web Server which can be used by an individual looking to translate tex
 
 ```
 
-https://github.com/Sushmithabp/TRANSLATE-SERVER/blob/main/translate-server-main/table1.JPG
+./ https://github.com/Sushmithabp/TRANSLATE-SERVER/blob/main/translate-server-main/table1.JPG
 
 ## Design Decisions
  - Used MySQL as the database since there would be three fields provided by the user and a fourth field would be the translated text, and for managing these four fields it's   best to store the data in the form of table
