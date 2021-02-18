@@ -22,7 +22,7 @@
 ```
 **How to setup and run the server**
 
->- Clone the repository from github (https://github.com/rishitsahu/translate-server)
+>- Clone the repository from github (https://github.com/Sushmithabp/TRANSLATE-SERVER)
 >- Open it in a code editor (VScode preferred)
 >-For the MySQL database connection you have to specify the port, host, user and the password in all the 4 modules which are db, route, smartCache, cacheMiddleware according to your MySQL database.
 >-Install all the dependencies present in package.json with following command -npm i dependency@lastest_version --save -npm install dotenv@google-cloud/translate --save (for the api, use this command)
